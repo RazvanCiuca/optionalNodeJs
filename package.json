@@ -1,0 +1,13 @@
+{
+  "name": "optional",
+  "version": "1.0.0",
+  "description": "optional node",
+  "main": "main.js",
+  "scripts": {},
+  "author": "Razvan Ciuca",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1"
+  }
+}
