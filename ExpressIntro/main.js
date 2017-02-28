@@ -1,5 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var fs = require('fs');
+var usersController = require('./usersController.js');
 
 var app = express();
 app.use(bodyParser.urlencoded({ extended: true}));
@@ -14,6 +16,7 @@ router.get('/', function(req, res) {
         message: 'Hello World!'
     });
 });
+router.get('/users', usersController.getUsers);
 
 app.use('/', router);
 app.listen(port);
