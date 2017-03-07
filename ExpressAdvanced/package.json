@@ -1,0 +1,16 @@
+{
+  "name": "optional",
+  "version": "1.0.0",
+  "description": "optional node",
+  "main": "main.js",
+  "scripts": {},
+  "author": "Razvan Ciuca",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "lodash": "^4.17.4",
+    "nodemon": "^1.11.0"
+  }
+}
