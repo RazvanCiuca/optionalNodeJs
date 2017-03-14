@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Advanced Express</title>
+        <base href="/" target="">
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { font: 13px Helvetica, Arial; }
+            form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+            form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+            form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+            #messages { list-style-type: none; margin: 0; padding: 0; }
+            #messages li { padding: 5px 10px; }
+            #messages li:nth-child(odd) { background: #eee; }
+        </style>
+	</head>
+	<body>
+<div class="wrapper">
+    <ul id="messages"></ul>
+    <form action="">
+        <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+</div>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!--<script src="socket.io/node_modules/socket.io-client/dist/socket.io.js"></script>-->
+        <script src="js/socket.io.js"></script>
+		<script src="js/chat.js"></script>
+	</body>
+</html>
