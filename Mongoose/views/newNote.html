@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title}}</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="/newNote">New Note</a></li>\
+            <li><a href="/discuss">Discuss</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <div class="text-center">
+        <h1>New StandUp Meeting Note</h1>
+        <p class="lead">Enter your daily meeting notes:</p>
+    </div>
+
+    <form action="newNote" method="post" class="form-horizontal">
+        <fieldset>
+            <legend>Enter a Meeting Note</legend>
+
+            <div class="form-group">
+                <label for="memberName" class="col-md-4 control-label">Name:</label>
+                <div class="col-md-4">
+                    <select name="memberName" id="memberName" class="form-control">
+                        <option value="None">(Select Name)</option>
+                        <option value="Razvan">Razvan</option>
+                        <option value="Flava Flav">Flava Flav</option>
+                        <option value="Gigi Camataru'">Gigi Camataru'</option>
+                        <option value="Unde e domnul Iohannis?!">Unde e domnul Iohannis?!</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="project" class="col-md-4 control-label">Project:</label>
+                <div class="col-md-4">
+                    <select name="project" id="project" class="form-control">
+                        <option value="None">(Select Project)</option>
+                        <option value="Matrix">Matrix</option>
+                        <option value="OptionalNodeJS">OptionalNodeJS</option>
+                        <option value="Uggghhhh">Uggghhhh</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="workYesterday" class="col-md-4 control-label">What you did yesterday:</label>
+                <div class="col-md-6">
+                    <textarea name="workYesterday" id="workYesterday" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="workToday" class="col-md-4 control-label">What will you do today?:</label>
+                <div class="col-md-6">
+                    <textarea name="workToday" id="workToday" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="impediments" class="col-md-4 control-label">Any impediments?:</label>
+                <div class="col-md-6">
+                    <textarea name="impediments" id="impediments" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="buttonSave" class="col-md-4 control-label">Any impediments?:</label>
+                <div class="col-md-4">
+                    <button class="btn btn-primary" id="buttonSave" name="buttonSave" type="submit">Save Note</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
